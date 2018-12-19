@@ -2,6 +2,9 @@
 Humans follow a way to communicate. Similarly computers also need a set of rules to communicate with us or the network.
 * **Protocol** : A defined set of standards that computers must follow in order to communicate properly.
 * **Computer networking** : Full scope of protocols defining how computers communicate with each other.
+
+![five-layer](https://github.com/priyas13/Computer-Networking-/blob/master/five-layer.png)
+
 ## TCP/IP Five-Layer Network Model
 * **Physical** (Bottom layer) : It represents the physical layer that interconnects computers. Physical layer is all about cabling, connector, sending signals. This includes:
 
