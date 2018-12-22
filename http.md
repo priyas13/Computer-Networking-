@@ -8,3 +8,5 @@ other content, or performs other functions on behalf of client, returns a respon
 
 There are multiple entity like router, cables etc. but these all are hidden in the lower level.
 
+The traditional port for http is Port 80. For example, suppose we want to request the webpage from a web server running on computer listening on IP 10.1.1.100, the traffic would be directed to port 80 on that computer. Ports are normally donated with a colon after the IP address ad 10.1.1.100:80. The complete address with port number is called socket number.
+
