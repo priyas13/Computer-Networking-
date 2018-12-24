@@ -1,3 +1,8 @@
+# Data Link Layer
+- It is responsible for moving of data into and out of physical link in a network. 
+- Data bits are encoded, decoded and organized in the data link layer before they are transferred between the nodes.
+- The data link layer ensures an initial connection has been set up, divides output data into data frames and handles the acknowledgements from a receiver that the data arrived successfully. It also ensures incoming data has been received successfully by analyzing bit patterns at special places in the frames.
+- If an error occurs, the data link layer notifies higher-level protocols that something has happened to the physical link. Frame sequencing capabilities within the data link layer permit the receiving device to reorder frames that might have been transmitted out of sequence. The data link layer verifies the packet is unimpaired. The data link layer also manages flows by enabling devices on a link to detect congestion. Nearby devices then transmit congestion information, so traffic can be rerouted accordingly.
 ## Ethernet and Mac Addresses
 ### Ethernet 
 The protocol most widely used to send data across individual links.
