@@ -36,3 +36,28 @@ For learning about all the protocols we could go to this [link](https://git-scm.
 - **GitHub** and **bitbucket** are some of the Git hosting services.
 
 ### STEPS
+#### On the server machine (That is mac for me)
+- made git as a user on my mac machine 
+- mkdir repos (we should make a repos folder inside the git user)
+- cd git/repos
+- git daemon --export-all --base-path=.
+- Now we need to make sure that remote login is enabled on the machine where we are tryng to set up the git server
+  (Settings -> Sharing and ensure Remote Login is checked, "Remote Login:On")
+  #### On another machine (That is Ubuntu for me)
+- mkdir git 
+- mkdir repos
+- cd git/repos
+- mkdir test
+- cd git/repos/test
+- git init 
+- git remote add swarnpriya git://192.168.254.14:9418/test
+Now from another machine, we can add my Mac as remote in git from withing a repo. (in my case it is Ubuntu) 
+- git remote -v (checks the remotes we have set up)
+- git clone git://192.168.254.14:9418/ocaml-irmin 
+- ls
+- ocaml-irmin will be present in the remote machine that is Ubuntu
+- **Problems are git pull, git add is not working on the remote machine**
+- Suppose I add a new readme file in the remote and want to pull that commit from the remote
+git pull swarnpriya master (**this doesn't work**) (**but git clone worked and ocaml-irmin is present in the Ubuntu machine**)
+
+
