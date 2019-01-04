@@ -42,6 +42,7 @@ For learning about all the protocols we could go to this [link](https://git-scm.
 - cd git/repos
 - git daemon --export-all --base-path=.
 - Now we need to make sure that remote login is enabled on the machine where we are tryng to set up the git server
+
   (Settings -> Sharing and ensure Remote Login is checked, "Remote Login:On")
   #### On another machine (That is Ubuntu for me)
 - mkdir git 
@@ -51,6 +52,7 @@ For learning about all the protocols we could go to this [link](https://git-scm.
 - cd git/repos/test
 - git init 
 - git remote add swarnpriya git://192.168.254.14:9418/test
+
 Now from another machine, we can add my Mac as remote in git from withing a repo. (in my case it is Ubuntu) 
 - git remote -v (checks the remotes we have set up)
 - git clone git://192.168.254.14:9418/ocaml-irmin 
